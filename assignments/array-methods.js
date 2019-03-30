@@ -489,6 +489,18 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// We want the sum of the donations of all the people with L shirts.
+
+// have L shirts
+// pull out all of their donations in a new array
+// use reduce to total the donations
+
+let totalLargeDonations = [];
+totalLargeDonations = runners
+  .filter(runner => runner.shirt_size === "L")
+  .map(runner => runner.donation)
+  .reduce((total, curr) => total + curr, 0);
+console.log(totalLargeDonations);
 
 // Problem 2
 
