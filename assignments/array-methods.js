@@ -512,3 +512,12 @@ const runnersNames = runners.map(function(runner) {
 console.log(runnersNames);
 
 // Problem 3
+// An array with all runners that donated over $100
+
+const donatedOverOneHundred = runners.filter(function(runner) {
+  if (runner.donation >= 100) {
+    return true;
+  }
+});
+
+console.log(donatedOverOneHundred);
