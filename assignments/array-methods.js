@@ -503,5 +503,12 @@ totalLargeDonations = runners
 console.log(totalLargeDonations);
 
 // Problem 2
+// An array of all of the runners first names
+
+const runnersNames = runners.map(function(runner) {
+  return runner.first_name;
+});
+
+console.log(runnersNames);
 
 // Problem 3
