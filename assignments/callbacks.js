@@ -41,9 +41,9 @@ sumNums(3, 4, add => {
   console.log(add);
 });
 
-// function multiplyNums(x, y, cb) {
-//   return cb(x * y);
-// }
+function multiplyNums(x, y, cb) {
+  return cb(x * y);
+}
 
 // contains checks if an item is present inside of the given array/list.
 // Pass true to the callback if it is, otherwise pass false.
